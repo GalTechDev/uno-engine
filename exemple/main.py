@@ -1,5 +1,7 @@
-import sys
-sys.path.insert(0, '.')
+##### For embeded Python #####
+import sys                   #
+sys.path.insert(0, '.')      #
+##############################
 
 from src.Game import Game
 from src.GameRules.classic import classicRules
