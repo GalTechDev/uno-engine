@@ -19,3 +19,11 @@ For Dev :
 - [x] Custom Card
 - [ ] uno on last card
 - [ ] async card choice
+
+For Custom GameRule :
+- [x] on_card_played event
+- [x] on_card_drawed event
+- [x] is_card_playable check
+- [x] generate card
+- [x] full access on game stats
+- [ ] pause the game
