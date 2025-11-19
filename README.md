@@ -19,6 +19,7 @@ For Dev :
 - [x] Custom Card
 - [ ] uno on last card
 - [ ] async card choice
+- [ ] multi stat card (like change color card)
 
 For Custom GameRule :
 - [x] on_card_played event
