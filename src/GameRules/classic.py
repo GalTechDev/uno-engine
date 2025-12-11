@@ -26,7 +26,7 @@ class SameSign(GameRule):
 class Plus2(GameRule):
     name = "Plus2"
     
-    def on_Card_played(self, Card: Card) -> None:
+    def on_Card_played(self, Card: Card, player = None) -> None:
         if Card.sign == "+2":
             self.game.next_turn()
             for i in range(2):
@@ -35,7 +35,7 @@ class Plus2(GameRule):
 class Plus4(GameRule):
     name = "Plus4"
     
-    def on_Card_played(self, Card: Card) -> None:
+    def on_Card_played(self, Card: Card, player = None) -> None:
         if Card.sign == "+4":
             self.game.next_turn()
             for i in range(4):
@@ -44,14 +44,14 @@ class Plus4(GameRule):
 class Pass(GameRule):
     name = "Pass"
     
-    def on_Card_played(self, Card: Card) -> None:
+    def on_Card_played(self, Card: Card, player = None) -> None:
         if Card.sign == "pass":
             self.game.next_turn()
             
 class Reverse(GameRule):
     name = "Reverse"
     
-    def on_Card_played(self, Card: Card) -> None:
+    def on_Card_played(self, Card: Card, player = None) -> None:
         if Card.sign == "reverse":
             self.game.switch_turn()
                 

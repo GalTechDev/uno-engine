@@ -34,7 +34,7 @@ class Game:
                 self._table.place_Card(cardToPlay)
                 
                 for gamerule in self._gamerules:
-                    gamerule.on_Card_played(cardToPlay)
+                    gamerule.on_Card_played(cardToPlay, self.get_player_turn())
             else:
                 self.playTurn()
         else:
@@ -59,6 +59,9 @@ class Game:
         
     def get_player_turn(self) -> Player:
         return self._players[self._turn]
+
+    def get_gamerules(self) -> list[GameRule]:
+        return self._gamerules
     
     def make_player_pioche(self) -> None:
         card = self._table.draw_Card()
