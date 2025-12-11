@@ -8,7 +8,7 @@ Classic Rule :
 - [x] 2+
 - [x] pass
 - [x] reverse
-- [ ] draw card
+- [X] draw card
 - [ ] color change 
 - [ ] 4+
 
@@ -17,8 +17,9 @@ For Dev :
 - [x] Custom Player
 - [x] Custom GameRule
 - [x] Custom Card
-- [ ] uno on last card
-- [ ] async card choice
+- [X] uno on last card
+- [X] catch uno
+- [ ] async game
 - [ ] multi state card (like change color card)
 
 For Custom GameRule :
