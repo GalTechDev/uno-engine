@@ -1,5 +1,8 @@
 This code is here to help you code your UNO like game focussing on the interface and not the core of the game.
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Rules :
 
 Classic Rule :
